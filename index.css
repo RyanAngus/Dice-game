@@ -6,14 +6,29 @@ html, body {
     --color-5: #ff8b94;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     padding-top: 50px;
     background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
-    font-family: 'Roboto', sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
     height: 100vh;
     color: black;
+}
+
+.title-style {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.rulesBox {
+    border: 1px solid black; 
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .container {
