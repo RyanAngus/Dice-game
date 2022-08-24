@@ -12,16 +12,18 @@ const message = document.getElementById("message")
 const rollBtn = document.getElementById("rollBtn")
 const resetBtn = document.getElementById("resetBtn")
 
+
 function showResetButton() {
     rollBtn.style.display = "none"
     resetBtn.style.display = "block"
 }
 
 
-
 /* Hook up a click event listener to the Roll Dice Button. */
  rollBtn.addEventListener("click", function() {
     const randomNumber = Math.floor(Math.random() * 6) + 1
+
+    
 
 
     if (player1Turn) {
@@ -46,20 +48,22 @@ function showResetButton() {
     }
 
     if (player1Dice.textContent == player2Dice.textContent && player1Turn) {
-        message.textContent = "Player 1 back to zero 🤪 😿"
+        message.textContent = "Player 1 back to zero 😿"
         player1Score = 0
         player1Scoreboard.textContent = 0
     } else if (player1Dice.textContent == player2Dice.textContent) {
-        message.textContent = "Player 2 back to zero 🤪 😿"
+        message.textContent = "Player 2 back to zero 😿"
         player2Score = 0
         player2Scoreboard.textContent = 0
     }
     
     if (player1Score >= 20) {
         message.textContent = "Player 1 Won 🥳"
+        confettiFUN()
         showResetButton()
     }  else if (player2Score >= 20) {
         message.textContent = "Player 2 Won 🎉"
+        confettiFUN()
         showResetButton()
     }
     player1Turn = !player1Turn
