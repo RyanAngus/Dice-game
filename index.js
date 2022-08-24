@@ -85,7 +85,7 @@ function reset() {
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")
     player1Dice.classList.remove("spinDice")
-    player2Dice.classList.remove("spinDice")
+    player2Dice.classList.remove("spinDice")  
 }
 
 

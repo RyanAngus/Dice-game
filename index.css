@@ -70,7 +70,7 @@ button:focus {
     display: none;
 }
 
-.spinDice {
+.spinDice { 
     animation-name: spin; 
     animation-duration: .2s;
 }
